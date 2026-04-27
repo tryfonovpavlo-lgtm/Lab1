@@ -10,6 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -42,17 +44,17 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-4" style="background-color: rgb(21, 173, 89); margin-bottom: 20px; margin-top: 20px; height: 78.8vh; display: flex;">
                     <div class="forma">
-                        <form role="form">
+                        <form role="form" onsubmit="login();">
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email" placeholder="Email">
                             </div>
                             <hr>
                             <div class="form-group">
-                                <label for="password">Пароль</label>
-                                <input type="password" class="form-control" id="password" placeholder="Пароль">
+                                <label for="pass">Пароль</label>
+                                <input type="pass" class="form-control" id="pass" placeholder="Пароль">
                             </div>
-                            <button type="button" class="btn btn-success" style="margin: 0 auto; display: block;">Увійти</button>
+                            <button type="submit" class="btn btn-success" style="margin: 0 auto; display: block;">Увійти</button>
                         </form>
                     </div>
                 </div>
